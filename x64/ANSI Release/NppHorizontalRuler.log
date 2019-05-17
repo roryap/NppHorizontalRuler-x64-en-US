@@ -1,0 +1,22 @@
+﻿  dllmain.cpp
+  HorizontalRuler.cpp
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(223): error C2664: 'int MultiByteToWideChar(UINT,DWORD,LPCCH,int,LPWSTR,int)': cannot convert argument 5 from 'CHAR [32]' to 'LPWSTR'
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(223): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(311): error C2664: 'BOOL ExtTextOutA(HDC,int,int,UINT,const RECT *,LPCSTR,UINT,const INT *)': cannot convert argument 6 from 'wchar_t [10]' to 'LPCSTR'
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(311): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(340): error C2664: 'BOOL ExtTextOutA(HDC,int,int,UINT,const RECT *,LPCSTR,UINT,const INT *)': cannot convert argument 6 from 'wchar_t [10]' to 'LPCSTR'
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(340): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  Ini.cpp
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\ini.cpp(161): error C2664: 'DWORD GetPrivateProfileStringA(LPCSTR,LPCSTR,LPCSTR,LPSTR,DWORD,LPCSTR)': cannot convert argument 3 from 'const wchar_t [1]' to 'LPCSTR'
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\ini.cpp(161): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\ini.cpp(166): error C2664: 'DWORD GetPrivateProfileStringA(LPCSTR,LPCSTR,LPCSTR,LPSTR,DWORD,LPCSTR)': cannot convert argument 3 from 'const wchar_t [1]' to 'LPCSTR'
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\ini.cpp(166): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\ini.cpp(178): error C2664: 'DWORD GetPrivateProfileStringA(LPCSTR,LPCSTR,LPCSTR,LPSTR,DWORD,LPCSTR)': cannot convert argument 3 from 'const wchar_t [1]' to 'LPCSTR'
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\ini.cpp(178): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  NppHorizontalRuler.cpp
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\npphorizontalruler.cpp(197): error C2664: 'HWND FindWindowExA(HWND,HWND,LPCSTR,LPCSTR)': cannot convert argument 3 from 'LPCWSTR' to 'LPCSTR'
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\npphorizontalruler.cpp(197): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\npphorizontalruler.cpp(200): error C2664: 'HWND FindWindowExA(HWND,HWND,LPCSTR,LPCSTR)': cannot convert argument 3 from 'LPCWSTR' to 'LPCSTR'
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\npphorizontalruler.cpp(200): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  PluginDefinition.cpp
+  Generating Code...

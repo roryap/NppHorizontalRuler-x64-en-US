@@ -1,0 +1,25 @@
+﻿  dllmain.cpp
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\dllmain.cpp(38): warning C4100: 'lpReserved': unreferenced formal parameter
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\dllmain.cpp(102): warning C4100: 'hModule': unreferenced formal parameter
+  HorizontalRuler.cpp
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(198): warning C4458: declaration of 'nFontSize' hides class member
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.h(69): note: see declaration of 'HorizontalRuler::nFontSize'
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(422): warning C4458: declaration of 'x' hides class member
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.h(53): note: see declaration of 'HorizontalRuler::x'
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(422): warning C4458: declaration of 'y' hides class member
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.h(54): note: see declaration of 'HorizontalRuler::y'
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(432): warning C4458: declaration of 'x' hides class member
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.h(53): note: see declaration of 'HorizontalRuler::x'
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.cpp(432): warning C4458: declaration of 'y' hides class member
+  c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\horizontalruler.h(54): note: see declaration of 'HorizontalRuler::y'
+  Ini.cpp
+  NppHorizontalRuler.cpp
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\npphorizontalruler.cpp(164): warning C4100: 'lParam': unreferenced formal parameter
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\npphorizontalruler.cpp(347): warning C4100: 'lParam': unreferenced formal parameter
+  PluginDefinition.cpp
+c:\_temporary\freeftys-master\freeftys-master\secondary\npphorizontalruler\src\plugindefinition.cpp(36): warning C4100: 'hModule': unreferenced formal parameter
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): warning MSB8012: TargetPath(C:\_Temporary\freeftys-master\freeftys-master\secondary\NppHorizontalRuler\x64\Unicode Debug\NppHorizontalRuler.dll) does not match the Linker's OutputFile property value (C:\_Temporary\freeftys-master\freeftys-master\secondary\NppHorizontalRuler\x64\Unicode Debug\NppHorizontalRuler_Debug.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1218,5): warning MSB8012: TargetName(NppHorizontalRuler) does not match the Linker's OutputFile property value (NppHorizontalRuler_Debug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library C:\_Temporary\freeftys-master\freeftys-master\secondary\NppHorizontalRuler\x64\Unicode Debug\NppHorizontalRuler.lib and object C:\_Temporary\freeftys-master\freeftys-master\secondary\NppHorizontalRuler\x64\Unicode Debug\NppHorizontalRuler.exp
+  NppHorizontalRuler.vcxproj -> C:\_Temporary\freeftys-master\freeftys-master\secondary\NppHorizontalRuler\x64\Unicode Debug\NppHorizontalRuler.dll
