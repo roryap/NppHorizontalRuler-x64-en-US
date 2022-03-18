@@ -20,7 +20,7 @@
 
 #include "NppHorizontalRuler.h"
 
-const TCHAR NPP_PLUGIN_NAME[] = TEXT("Notepad++ Horizontal Ruler plugin");
+const TCHAR NPP_PLUGIN_NAME[] = TEXT("Notepad++ Horizontal Ruler plugin DARK");
 const int nbFunc = DllMainNamespace::MENUCOUNT;
 FuncItem funcItem[nbFunc];
 NppData nppData;
@@ -126,7 +126,7 @@ void commandMenuInit()
 	setCommand(DllMainNamespace::ABOUT, TEXT("About"), aboutDlg, NULL, false);
 	setCommand(DllMainNamespace::RULERTOGGLE, TEXT("RulerToggle"), RulerToggle, NULL, false);
 	setCommand(DllMainNamespace::RULERVISIBLE, TEXT("RulerVisible"), RulerVisible, NULL, false);
-	setCommand(DllMainNamespace::RULEROPTION, TEXT("RulerOption"), RulerOption, NULL, false);
+	setCommand(DllMainNamespace::RULEROPTION, TEXT("RulerOptions"), RulerOption, NULL, false);
 	return;
 }
 void commandMenuCleanUp()
@@ -163,7 +163,9 @@ void aboutDlg()
 				TEXT("Unfortunately not in English.\n")
 				TEXT("This translation also will make bing.\n")
 				TEXT("\n")
-				TEXT("Bugs and wishes there was other please email until freesftys@yahoo.co.jp.\n"),
+				TEXT("Bugs and wishes there was other please email until freesftys@yahoo.co.jp.\n")
+				TEXT("Credits for ENG 64b version goes to roryap.\n")
+				TEXT("rsebestik created primitive fork for DARK theme (without any configuration).\n"),
 				TEXT("Horizontal Ruler Plugins"),
 				MB_OK);
 }

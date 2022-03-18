@@ -295,22 +295,28 @@ void HorizontalRuler::PaintRuler()
 
 	drawRc = rc;
 	drawRc.right = nRulerStartX;
-	FillRect(hDC, &drawRc, GetSysColorBrush(0));
+	FillRect(hDC, &drawRc, (HBRUSH)GetStockObject(DKGRAY_BRUSH));//SH DARK this is background of left part above line numbers
 	drawRc.left = nRulerStartX;
 	drawRc.right = rc.right;
-	FillRect(hDC, &drawRc, (HBRUSH)GetStockObject(WHITE_BRUSH));
+	FillRect(hDC, &drawRc, (HBRUSH)GetStockObject(DKGRAY_BRUSH));//SH DARK this works as background
 	
 	//線の描画
 	if( nScrollMod == 0)
 	{
 		if( (nStartCol % 10)==0 )
 		{
+
 			memset(sColumNumber, 0, sizeof(sColumNumber));
 			nLength = swprintf_s(sColumNumber, 10, L"%d", nStartCol);
 			SetBkMode(hDC, TRANSPARENT);
+			SetTextColor(hDC, RGB(223, 223, 223));//SH DARK this is text color for number 0
 			ExtTextOut(hDC, nRulerStartX+1, rc.top, ETO_CLIPPED, &rc, sColumNumber, nLength, 0);
 
+			HPEN hPen = CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
+			SetDCBrushColor(hDC, RGB(255, 0, 0));
+			SetDCPenColor(hDC, RGB(255, 0, 0));
 			MoveToEx(hDC, nRulerStartX, rc.top, NULL);
+
 			LineTo(hDC, nRulerStartX, rc.top+this->nTopMargin);
 		}
 		else
@@ -325,18 +331,19 @@ void HorizontalRuler::PaintRuler()
 			rcCaret.top = rc.top+this->nCharHeight;
 			rcCaret.right = rcCaret.left + this->nCharWidth - 3;
 			rcCaret.bottom = rc.bottom - 1;
-			FillRect(hDC, &rcCaret, (HBRUSH)GetStockObject(BLACK_BRUSH));
+			FillRect(hDC, &rcCaret, (HBRUSH)GetStockObject(LTGRAY_BRUSH));//SH DARK this is current column on selected row marker (only for column 0)
 		}
 	}
 
 	for(i=1; i<nMaxCol; i++)
 	{
 		tmp= nRulerStartX - nScrollMod + (i * this->nCharWidth);
-		if( (nStartCol + i)%10 == 0)
+		if( (nStartCol + i)%10 == 0)//writing numbers - for 10 and more
 		{
 			memset(sColumNumber, 0, sizeof(sColumNumber));
 			nLength = swprintf_s(sColumNumber, 10, L"%d", nStartCol+i);
 			SetBkMode(hDC, TRANSPARENT);
+			SetTextColor(hDC, RGB(223, 223, 223));//SH DARK this is text color for numbers >=10
 			ExtTextOut(hDC, tmp+1, rc.top, ETO_CLIPPED, &rc, sColumNumber, nLength, 0);
 			//TextOut(hDC, tmp+1, rc.top, sColumNumber, nLength);
 
@@ -355,7 +362,7 @@ void HorizontalRuler::PaintRuler()
 			rcCaret.top = rc.top+this->nCharHeight;
 			rcCaret.right = rcCaret.left + this->nCharWidth - 3;
 			rcCaret.bottom = rc.bottom - 1;
-			FillRect(hDC, &rcCaret, (HBRUSH)GetStockObject(BLACK_BRUSH));
+			FillRect(hDC, &rcCaret, (HBRUSH)GetStockObject(LTGRAY_BRUSH));//SH DARK this is current column on selected row marker
 		}
 	}
 	SelectObject(hDC, oldFont);

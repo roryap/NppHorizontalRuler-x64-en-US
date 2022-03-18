@@ -1,10 +1,7 @@
-﻿  dllmain.cpp
-  HorizontalRuler.cpp
-  Ini.cpp
-  NppHorizontalRuler.cpp
-  PluginDefinition.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: The intermediate directory (x64\Unicode Realeas\) contains files shared from another project (NppHorizontalRuler.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  dllmain.cpp
   dllmain.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
-     Creating library C:\_Temporary\freeftys-master\freeftys-master\secondary\NppHorizontalRuler\x64\Unicode Realeas\NppHorizontalRuler.lib and object C:\_Temporary\freeftys-master\freeftys-master\secondary\NppHorizontalRuler\x64\Unicode Realeas\NppHorizontalRuler.exp
+     Creating library D:\workspaces\github\NppHorizontalRuler-DARK-x64-en-US\x64\Unicode Realeas\NppHorizontalRuler.lib and object D:\workspaces\github\NppHorizontalRuler-DARK-x64-en-US\x64\Unicode Realeas\NppHorizontalRuler.exp
   Generating code
   Finished generating code
-  NppHorizontalRuler.vcxproj -> C:\_Temporary\freeftys-master\freeftys-master\secondary\NppHorizontalRuler\x64\Unicode Realeas\NppHorizontalRuler.dll
+  NppHorizontalRuler.vcxproj -> D:\workspaces\github\NppHorizontalRuler-DARK-x64-en-US\x64\Unicode Realeas\NppHorizontalRulerDark.dll
